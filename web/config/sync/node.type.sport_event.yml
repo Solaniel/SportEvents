@@ -1,0 +1,18 @@
+uuid: 8fe2996b-2691-4832-97c5-13591daac321
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Sport Event'
+type: sport_event
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

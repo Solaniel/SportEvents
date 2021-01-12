@@ -1,0 +1,40 @@
+uuid: bc4975f1-7816-4c7f-827f-4bad733a5d1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sport_event.field_conduction_time
+    - field.field.node.sport_event.field_duration
+    - node.type.sport_event
+  module:
+    - datetime
+    - user
+id: node.sport_event.default
+targetEntityType: node
+bundle: sport_event
+mode: default
+content:
+  field_conduction_time:
+    weight: 101
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_duration:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

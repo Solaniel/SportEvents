@@ -1,0 +1,21 @@
+uuid: 947a20a4-16ca-4bf3-ae37-3aed63fe1b4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conduction_time
+    - node.type.sport_event
+  module:
+    - datetime
+id: node.sport_event.field_conduction_time
+field_name: field_conduction_time
+entity_type: node
+bundle: sport_event
+label: 'Conduction Time'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

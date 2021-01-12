@@ -1,0 +1,24 @@
+uuid: 045bd544-35bc-4069-a5e5-3f306fd85f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sport_event.field_conduction_time
+    - field.field.node.sport_event.field_duration
+    - node.type.sport_event
+  module:
+    - user
+id: node.sport_event.teaser
+targetEntityType: node
+bundle: sport_event
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_conduction_time: true
+  field_duration: true

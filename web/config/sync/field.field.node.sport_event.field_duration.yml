@@ -1,0 +1,23 @@
+uuid: a739202d-5e17-4043-9b8b-e55933704885
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duration
+    - node.type.sport_event
+id: node.sport_event.field_duration
+field_name: field_duration
+entity_type: node
+bundle: sport_event
+label: Duration
+description: 'Number of minutes for the duration of the event.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

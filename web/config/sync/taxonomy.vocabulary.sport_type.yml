@@ -1,0 +1,8 @@
+uuid: 6929ca04-dbe6-4f70-8b26-2e71944ba875
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sport Type'
+vid: sport_type
+description: ''
+weight: 0
