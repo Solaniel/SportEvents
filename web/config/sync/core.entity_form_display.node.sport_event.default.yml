@@ -5,9 +5,13 @@ dependencies:
   config:
     - field.field.node.sport_event.field_conduction_time
     - field.field.node.sport_event.field_duration
+    - field.field.node.sport_event.field_organizers
+    - field.field.node.sport_event.field_sport_type
+    - field.field.node.sport_event.field_teams
     - node.type.sport_event
   module:
     - datetime
+    - paragraphs
     - path
 id: node.sport_event.default
 targetEntityType: node
@@ -32,6 +36,38 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_organizers:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_sport_type:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_teams:
+    type: entity_reference_paragraphs
+    weight: 125
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: team
+    third_party_settings: {  }
     region: content
   path:
     type: path

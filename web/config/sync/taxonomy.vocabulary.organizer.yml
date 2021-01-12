@@ -1,0 +1,8 @@
+uuid: 71980fe2-dbdd-4f85-83c0-75a66e522da2
+langcode: en
+status: true
+dependencies: {  }
+name: Organizer
+vid: organizer
+description: ''
+weight: 0

@@ -1,0 +1,33 @@
+uuid: af629c45-0710-43e5-9c02-28f5c223e5f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team.field_players
+    - field.field.paragraph.team.field_team_name
+    - paragraphs.paragraphs_type.team
+  module:
+    - entity_reference_revisions
+id: paragraph.team.default
+targetEntityType: paragraph
+bundle: team
+mode: default
+content:
+  field_players:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_team_name:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

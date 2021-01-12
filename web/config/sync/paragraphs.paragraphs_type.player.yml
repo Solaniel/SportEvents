@@ -1,0 +1,10 @@
+uuid: 10e5961c-4925-4474-b35f-64eb6beb9a28
+langcode: en
+status: true
+dependencies: {  }
+id: player
+label: Player
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,4 +1,4 @@
-all_icons_show: 1
+all_icons_show: 0
 facebook_url: 'https://www.facebook.com/idewdot'
 twitter_url: 'https://twitter.com/dewdots'
 instagram_url: 'https://www.instagram.com/google'
@@ -10,9 +10,9 @@ whatsapp_url: 'https://web.whatsapp.com/'
 github_url: 'https://github.com/'
 vk_url: ''
 circle_type: circle_border
-slider_show: 1
+slider_show: 0
 slider_code: ''
-slider_image: ''
+slider_image: {  }
 slider_image_path: ''
 comment_user_pic: 1
 node_author_pic: 0
@@ -25,3 +25,12 @@ styling: 0
 styling_code: ''
 _core:
   default_config_hash: bByJIZIvYjRxaygb7JvE8AXoG68A5vo--gyX7CuoiHQ
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: true
+favicon:
+  use_default: true

@@ -1,0 +1,34 @@
+uuid: 3872cdcc-c915-4dd0-a105-eb0ef2a514b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teams
+    - node.type.sport_event
+    - paragraphs.paragraphs_type.team
+  module:
+    - entity_reference_revisions
+id: node.sport_event.field_teams
+field_name: field_teams
+entity_type: node
+bundle: sport_event
+label: Teams
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      team: team
+    target_bundles_drag_drop:
+      player:
+        weight: 3
+        enabled: false
+      team:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

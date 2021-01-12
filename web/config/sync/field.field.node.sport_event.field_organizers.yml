@@ -1,0 +1,29 @@
+uuid: 514bd290-7961-4304-aaf7-03793d48e6a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizers
+    - node.type.sport_event
+    - taxonomy.vocabulary.organizer
+id: node.sport_event.field_organizers
+field_name: field_organizers
+entity_type: node
+bundle: sport_event
+label: Organizers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organizer: organizer
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 178669d7-8365-4aee-8ab1-9516dda0e58e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sport_type
+    - node.type.sport_event
+    - taxonomy.vocabulary.sport_type
+id: node.sport_event.field_sport_type
+field_name: field_sport_type
+entity_type: node
+bundle: sport_event
+label: 'Sport Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sport_type: sport_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

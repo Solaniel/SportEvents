@@ -1,0 +1,21 @@
+uuid: bcf051de-a580-4a56-b653-37f2c4731b36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.player.field_player_name
+    - paragraphs.paragraphs_type.player
+id: paragraph.player.default
+targetEntityType: paragraph
+bundle: player
+mode: default
+content:
+  field_player_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

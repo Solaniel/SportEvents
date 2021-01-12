@@ -5,9 +5,13 @@ dependencies:
   config:
     - field.field.node.sport_event.field_conduction_time
     - field.field.node.sport_event.field_duration
+    - field.field.node.sport_event.field_organizers
+    - field.field.node.sport_event.field_sport_type
+    - field.field.node.sport_event.field_teams
     - node.type.sport_event
   module:
     - datetime
+    - entity_reference_revisions
     - user
 id: node.sport_event.default
 targetEntityType: node
@@ -16,7 +20,7 @@ mode: default
 content:
   field_conduction_time:
     weight: 101
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -25,16 +29,41 @@ content:
     region: content
   field_duration:
     weight: 102
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
     region: content
-  links:
-    weight: 100
-    settings: {  }
+  field_organizers:
+    weight: 104
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sport_type:
+    weight: 103
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_teams:
+    type: entity_reference_revisions_entity_view
+    weight: 105
+    label: inline
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

@@ -6,19 +6,56 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.sport_event.field_conduction_time
     - field.field.node.sport_event.field_duration
+    - field.field.node.sport_event.field_organizers
+    - field.field.node.sport_event.field_sport_type
+    - field.field.node.sport_event.field_teams
     - node.type.sport_event
   module:
+    - datetime
     - user
 id: node.sport_event.teaser
 targetEntityType: node
 bundle: sport_event
 mode: teaser
 content:
+  field_conduction_time:
+    type: datetime_default
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_duration:
+    type: number_integer
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_organizers:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_sport_type:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
-  field_conduction_time: true
-  field_duration: true
+  field_teams: true
