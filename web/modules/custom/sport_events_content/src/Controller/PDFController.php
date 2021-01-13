@@ -12,6 +12,12 @@ class PDFController extends ControllerBase {
         $builder = \Drupal::entityTypeManager()->getViewBuilder('node');
         $storage = \Drupal::entityTypeManager()->getStorage('node');
         $node = $storage->load($node_id);
+        if (!$node) {
+            return [
+                '#type' => 'markup',
+                '#markup' => 'Wrong ID of Node. Please try again.'
+            ];
+        }
         $build = $builder->view($node, 'teaser');
         $output = render($build);
         $mpdf = new Mpdf(['tempDir' => 'sites/default/files/tmp']);
