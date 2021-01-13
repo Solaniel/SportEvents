@@ -1,0 +1,11 @@
+sport_events.download_pdf:
+  path: '/download/{node_id}'
+  defaults:
+    _controller: '\Drupal\sport_events_content\Controller\PDFController::renderNode'
+    _title: 'Download PDF'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      node_id:
+        type: string

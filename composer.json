@@ -22,7 +22,8 @@
         "drupal/paragraphs": "1.12",
         "drupal/pathauto": "1.8",
         "drupal/webform": "6.0",
-        "drupal/zuvi": "1.5"
+        "drupal/zuvi": "1.5",
+        "mpdf/mpdf": "^8.0"
     },
     "conflict": {
         "drupal/drupal": "*"

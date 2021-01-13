@@ -38,9 +38,14 @@ class ComposerStaticInit1002cd62708cdfb063e389fc2bd2ee5e
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/web/core/includes/bootstrap.inc',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        's' => 
+        array (
+            'setasign\\Fpdi\\' => 14,
+        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -86,6 +91,7 @@ class ComposerStaticInit1002cd62708cdfb063e389fc2bd2ee5e
         ),
         'M' => 
         array (
+            'Mpdf\\' => 5,
             'Masterminds\\' => 12,
         ),
         'L' => 
@@ -116,6 +122,7 @@ class ComposerStaticInit1002cd62708cdfb063e389fc2bd2ee5e
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
+            'DeepCopy\\' => 9,
         ),
         'C' => 
         array (
@@ -129,6 +136,10 @@ class ComposerStaticInit1002cd62708cdfb063e389fc2bd2ee5e
     );
 
     public static $prefixDirsPsr4 = array (
+        'setasign\\Fpdi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/setasign/fpdi/src',
+        ),
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -266,6 +277,10 @@ class ComposerStaticInit1002cd62708cdfb063e389fc2bd2ee5e
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Mpdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
+        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
@@ -337,6 +352,10 @@ class ComposerStaticInit1002cd62708cdfb063e389fc2bd2ee5e
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
+        ),
+        'DeepCopy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
         'Composer\\Semver\\' => 
         array (

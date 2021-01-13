@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'setasign\\Fpdi\\' => array($vendorDir . '/setasign/fpdi/src'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'TYPO3\\PharStreamWrapper\\' => array($vendorDir . '/typo3/phar-stream-wrapper/src'),
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
@@ -40,6 +41,7 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Mpdf\\' => array($vendorDir . '/mpdf/mpdf/src'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
     'Laminas\\ZendFrameworkBridge\\' => array($vendorDir . '/laminas/laminas-zendframework-bridge/src'),
     'Laminas\\Stdlib\\' => array($vendorDir . '/laminas/laminas-stdlib/src'),
@@ -58,6 +60,7 @@ return array(
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib/Doctrine/Common/Lexer'),
     'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/reflection/lib/Doctrine/Common'),
+    'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
     'Asm89\\Stack\\' => array($vendorDir . '/asm89/stack-cors/src/Asm89/Stack'),

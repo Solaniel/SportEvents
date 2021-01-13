@@ -1,0 +1,5 @@
+name: Sport Events Content Module
+type: module
+description: Module about the content for the Sport Events site
+core_version_requirement: 9.x
+package: Custom
